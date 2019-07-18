@@ -8,6 +8,7 @@ namespace COMP123_S2019_Lab10_301012468
 {
     static class Program
     {
+        public static Dictionary<FormName, Form> Forms;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +17,13 @@ namespace COMP123_S2019_Lab10_301012468
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StartForm());
+
+            Forms = new Dictionary<FormName, Form>();
+            Forms.Add(FormName.SPLASH_FORM, new StartForm());
+            Forms.Add(FormName.MAIN_FORM, new MainForm());
+         
+
+            Application.Run(Forms[FormName.SPLASH_FORM]);
         }
     }
 }

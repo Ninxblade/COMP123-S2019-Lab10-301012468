@@ -16,19 +16,15 @@ namespace COMP123_S2019_Lab10_301012468
         {
             InitializeComponent();
         }
-
-        private void Timer1_Tick(object sender, EventArgs e)
-        {
-
-        }
-
         private void StartForm_Load(object sender, EventArgs e)
         {
             SplashTimer.Enabled = true;
         }
-
         private void SplashTimer_Tick(object sender, EventArgs e)
         {
+            Program.Forms[FormName.SPLASH_FORM].Hide();
+            Program.Forms[FormName.MAIN_FORM].Show();
+         
             SplashTimer.Enabled = false;
         }
     }
