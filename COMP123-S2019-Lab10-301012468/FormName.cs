@@ -10,6 +10,7 @@ namespace COMP123_S2019_Lab10_301012468
     {
         SPLASH_FORM,
         MAIN_FORM,
+        END_FORM,
         NUM_OF_FORMS
     }
 }

@@ -21,9 +21,9 @@ namespace COMP123_S2019_Lab10_301012468
             Forms = new Dictionary<FormName, Form>();
             Forms.Add(FormName.SPLASH_FORM, new StartForm());
             Forms.Add(FormName.MAIN_FORM, new MainForm());
-         
+            Forms.Add(FormName.END_FORM, new EndForm());
 
-            Application.Run(Forms[FormName.SPLASH_FORM]);
+            Application.Run(Forms[FormName.MAIN_FORM]);
         }
     }
 }
